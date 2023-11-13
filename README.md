@@ -1,21 +1,23 @@
-# ReactJS API Project
+# POKEMON World Leanathon 2.0 Project
 
-This is a simple ReactJS project that fetches and displays data from a REST API. The project allows users to interact with data from one of the following APIs:
+This is a simple ReactJS project that fetches and displays data from a REST API. The project allows users to interact with data from the following APIs:
 
-1. [PokeAPI](https://pokeapi.co/docs/v2)
-2. [SpaceX Data API](https://docs.spacexdata.com/)
-3. [JSONPlaceholder API](https://jsonplaceholder.typicode.com/)
+- [PokeAPI](https://pokeapi.co/docs/v2)
 
 ## Features
 
-1. **Basic Folder Structure:** The project follows a basic folder structure to organize components and styles.
+1. **Basic Folder Structure:** The project follows a `PokemonCard` component to show Cards.
 
-2. **Data Fetching:** The application fetches data from the selected API using Axios.
+2. **Data Fetching:**
+   - The application fetches 30 Pokemon objects from PokeAPI using `Axios`.
+   - Then Stores data inside `allPokemons` State.
 
-3. **Show Data Results:** Fetched data is displayed in the user interface.
+4. **Show Data Results:** Fetched data is displayed in the PokemonCard using Props Drilling of `Name`, `Image` and `Types`.
 
-4. **Error and Loading States:** The UI displays appropriate states for errors and loading while fetching data.
+5. **Error and Loading States:** The UI displays
+   - `Loading Skeleton Component` while Loading fetched data and
+   - displays `Error Skeleton Component`  while Error fetching data.
 
-5. **Dropdown Filter:** Users can filter data using a simple dropdown. The displayed data is based on the selected value; if no value is set, all data is shown.
+7. **Dropdown Filter:** Users can filter `Pokemon Types` using a simple dropdown. if no value is set, allTypes of Pokemon is shown.
 
-6. **CSS Styling:** The components are styled using CSS without any additional libraries.
+8. **CSS Styling:** The components are styled using `Tailwind CSS`.
