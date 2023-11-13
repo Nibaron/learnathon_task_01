@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from "../assets/images/logo.svg";
+import logo from "../assets/images/logo512.png";
 import { useState, useEffect } from "react";
 
 export const Header = () => {
@@ -24,7 +24,7 @@ export const Header = () => {
         <div className="flex items-middle">
           <img src={logo} alt="Logo" className="h-8 w-8" />
           <span className="text-2xl font-semibold ml-2 dark:text-white">
-            POKEMON
+            POKEMON WORLD
           </span>
         </div>
         
