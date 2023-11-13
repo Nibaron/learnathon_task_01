@@ -2,7 +2,7 @@ import React from "react";
 
 export const PokemonCard = ({ id, image, name, types, selectedType }) => {
   return (
-    <div className="card relative bg-white p-4 rounded-lg shadow-lg">
+    <div className="card relative bg-slate-200 p-4 rounded-lg transition-transform transform-glow-hover hover:scale-105 shadow-xl">
       <div className="text-sm mb-2">
         <small className="text-gray-600 text-bold">#{id}</small>
       </div>
