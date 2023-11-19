@@ -3,17 +3,25 @@ import React from "react";
 export const PokemonCard = ({ id, image, name, types, selectedType }) => {
   return (
     <div className="card relative bg-slate-200 p-4 rounded-lg transition-transform transform-glow-hover hover:scale-105 shadow-xl">
+      
+      {/**id at left corner */}
       <div className="text-sm mb-2">
         <small className="text-gray-600 text-bold">#{id}</small>
       </div>
+
+      {/**center pokemon image */}
       <img
         src={image}
         alt={name}
         className="mx-auto mb-2 h-32 object-contain"
       />
+
       <div className="text-center">
+        {/**Pokemon name */}
         <h3 className="text-xl font-semibold mb-1">{name}</h3>
         <div className="my-2 flex flex-wrap gap-2 justify-center">
+          
+          {/** Pokemon types  */}
           <div className="text-gray-600 text-lg">Type: </div>
           {types.map((type, index) => (
             <span

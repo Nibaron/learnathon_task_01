@@ -1,6 +1,7 @@
 import React from 'react';
-import logo from "../assets/images/logo512.png";
+import logo from "../../assets/images/logo512.png";
 import { useState, useEffect } from "react";
+import { Link } from 'react-router-dom';
 
 export const Header = () => {
   const [darkMode, setDarkMode] = useState(
@@ -21,13 +22,15 @@ export const Header = () => {
   return (
     <header>
       <nav className="bg-white border-b-2 border-gray-200 dark:bg-gray-900 dark:border-b-1 dark:border-gray-900 p-4 flex items-center justify-between">
+        {/** logo and title */}
         <div className="flex items-middle">
-          <img src={logo} alt="Logo" className="h-8 w-8" />
+          <Link to="/" ><img src={logo} alt="Logo" className="h-8 w-8" /></Link>
           <span className="text-2xl font-semibold ml-2 dark:text-white">
             POKEMON WORLD
           </span>
         </div>
         
+        {/** Theme Button */}
         <div>
           <label htmlFor="darkModeToggle" className="cursor-pointer relative">
             <button
@@ -67,6 +70,7 @@ export const Header = () => {
             </button>
           </label>
         </div>
+
       </nav>
     </header>
   );
