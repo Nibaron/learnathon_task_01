@@ -25,8 +25,8 @@ export const Header = () => {
         {/** logo and title */}
         <div className="flex items-middle">
           <Link to="/" ><img src={logo} alt="Logo" className="h-8 w-8" /></Link>
-          <span className="text-2xl font-semibold ml-2 dark:text-white">
-            POKEMON WORLD
+          <span className="text-2xl text-blue-800 font-semibold ml-2 dark:text-white">
+            {`<POKEMON WORLD />`}
           </span>
         </div>
         
